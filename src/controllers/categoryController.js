@@ -16,7 +16,6 @@ exports.getAllCategories = asyncWrapper(async (req, res, next) => {
     });
 });
 
-
 exports.getSubCategories = asyncWrapper(async (req, res, next) => {
     const { categoryId } = req.params;
     if (!categoryId || isNaN(parseInt(categoryId))) { // kiểm tra cơ bản cho categoryId

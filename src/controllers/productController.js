@@ -114,7 +114,7 @@ exports.getProducts = asyncWrapper(async (req, res, next) => {
     });
 });
 
-// Lấy chi tiết một sản phẩm (bao gồm các variants)
+// Lấy chi tiết một sản phẩm 
 exports.getProductById = asyncWrapper(async (req, res, next) => {
     const { productId } = req.params;
 
